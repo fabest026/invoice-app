@@ -1,0 +1,123 @@
+.login-wrapper
+{
+    height: 100vh;
+    width: 100%;
+    background-color: #282c34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login-container
+{
+    height: 500px;
+    width: 60%;
+    background-color: #eee;
+    box-shadow: 5px 5px 10px #eee;
+    display: flex;
+    
+}
+
+.login-boxes
+{
+    height: 600px;
+    width: 50%;
+    padding: 20px;
+    /* background-color: red; */
+}
+
+.login-left
+{
+    background-image: url('../../assests/invoice.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height: 100%;
+
+}
+
+.login-right
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-heading
+{
+    font-size: 25px;
+    /* text-align: center; */
+}
+
+.login-text
+{
+    height: 40px;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.button
+{
+    height: 40px;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.login-btn
+{
+    cursor: pointer;
+    height: 36px;
+    width: 25%;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: hwb(232 2% 2%);
+    color: rgb(255, 255, 255);
+    display: block;
+    margin: 0 auto;
+    
+}
+
+
+.login-btn:hover
+{
+    transition:0.5s;
+    cursor: pointer;
+    background-color: #000000; /* Green */
+    color: white;
+    
+
+}
+
+.register-link
+{
+    text-decoration: none;
+    color: royalblue;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.register-link:hover
+{
+    
+    text-decoration: underline;
+    
+}
+
+
+.login-input:hover
+{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+
+    
+

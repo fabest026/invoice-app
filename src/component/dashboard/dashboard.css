@@ -1,0 +1,776 @@
+.dashboard-wrapper
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+/* .side-nav
+{
+    width: 20%;
+    height: 150vh;
+    background-color: #282c34;
+}
+
+.dashboard-container
+{
+    width: 80%;
+    height: 150vh;
+    background-color: #eee;
+    padding: 10px;
+
+} */
+
+.side-nav {
+    width: 20%;
+    min-height: 150vh; /* Adjusted for better responsiveness */
+    background-color: #282c34;
+}
+
+.dashboard-container {
+    width: 80%;
+    min-height: 150vh; /* Adjusted for better responsiveness */
+    background-color: #eee;
+    padding: 10px; /* Increased padding for better spacing */
+}
+
+
+/* .profile-info
+{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    gap: 10px;
+} */
+
+.profile-info {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    gap: 20px; /* Increased gap for better spacing */
+    background-color: #333; /* Added background color for better visibility */
+    border-radius: 10px; /* Added rounded corners for a smoother look */
+}
+
+.profile-info p
+{
+    margin-top: 20px;
+    margin-bottom: 4px;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+
+.profile-info img
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /* margin-right: 10px; */
+}
+
+
+
+.profile-info button
+{
+    width: 100px;
+    height: 30px;
+    background-color: #282c34;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-info button:hover
+{
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.menu 
+{
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-link
+{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-link:hover
+{
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-invoice-heading
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #282c34;
+
+}
+
+.new-invoice-form-inputs
+{
+    
+    width: 30%;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+
+}
+
+.new-invoice-form-inputs input
+{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+.new-product-btn
+{
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    background-color: #282c34;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.new-product-btn:hover
+{
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-wrapper
+{
+    width: 100%;
+    padding: 5px;
+    background-color: #f5f5f5;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    min-height: auto;
+    
+    
+   
+}
+
+.product-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    margin: 10px auto;
+    background-color: #fff;
+    max-width: 700px;
+}
+
+.product-container p
+{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    width: 20%;
+}
+
+.product-total
+{
+   margin-top: 30px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+.product-total p
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    width: 40%;
+}
+
+.header-btn
+{
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    background-color: #282c34;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: flex-end;
+
+}
+
+.header-btn:hover
+{
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bottom-btn
+{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.invoice-table
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 5px; */
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px auto; 
+    width: 80%;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.invoice-table p
+{
+
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding: 7px;
+    color: #000000;
+    width: 50%;
+    text-align: center;
+}
+
+.invoices-box
+{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto; 
+    width: 80%;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+
+.invoices-box p
+{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding: 7px;
+    color: #000000;
+    width: 50%;
+    text-align: center;
+}
+
+.delete-btn
+{
+    
+    padding: 10px;
+    border: none;
+    background-color: #282c34;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+
+.delete-btn:hover
+{
+    background-color: #ff0000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.invoices-heading
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto; 
+    width: 80%;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.view-btn
+{
+   
+    background-color: #fafafa;
+    color: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    justify-content: flex-end;
+    padding: 10px;
+    border: 1px solid #000000;
+}
+
+.view-btn:hover
+{
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.invoice-detail-wrapper
+{
+    width: 50%;
+    background-color: #ffffff;
+    min-height: 90vh;
+    margin: auto;
+    padding: 20px;
+}
+
+.invoice-detail-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  
+   
+}
+
+.company-logo
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+.customer-detail h1
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+     
+}
+
+.customer-detail p
+{
+    font-size: 14px;
+    content: normal;
+    color: #000000;
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+}
+
+.company-info
+{
+    font-size: 18px;
+    color: #000000;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.invoice-detail-table
+{
+    margin-top: 100px;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+th,td
+{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.print-btn
+{
+    padding: 10px;
+    border: none;
+    background-color: #282c34;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+
+.print-btn:hover
+{
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.invoice-btn-header
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px;
+    margin-top: 0 auto; 
+    width: 80%;
+}
+
+
+.company-detail-footer
+{
+    font-size: 30px;
+    color: #000000;
+    width: 40%;
+    margin-top: 150px;
+    margin-bottom: 20px;
+     
+}
+
+.company-detail-footer p
+{
+    font-size: 14px;
+    content: normal;
+    color: #000000;
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+}
+
+.image-preview
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+.settings-wrapper
+{
+    /* width: 80%;
+    background-color: #ffffff;
+    min-height: 90vh;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); */
+
+    width: 50%;
+    min-height: 300px;
+    margin: auto;
+    background-color: white;
+    margin-top: 50px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.update-cName
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+
+    /* width: 30%;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); */
+}
+
+.update-cName input
+{
+    /* width: 80%;
+    padding: 10px; */
+
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+
+
+}
+
+/* .update-cName button
+{
+    background-color: #282c34;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    justify-content: flex-end;
+    font-weight: bold;
+} */
+
+.update-btn
+{
+    background-color: #282c34;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    justify-content: flex-end;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+
+.update-btn:hover
+{
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home-first-row
+{
+    display: flex;
+    flex-direction: row;
+    /* gap: 10px; */
+    margin-top: 20px;
+    justify-content: space-between;
+
+
+}
+
+.home-box
+{
+    width: 32%;
+    height: 27vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    gap: 10px; 
+}
+
+.box-1
+{
+    background: linear-gradient(to right, #282c34, #7029ef);
+}
+
+.box-2
+{
+    background: linear-gradient(to right, #282c34, #430ca6);
+}
+
+.box-3
+{
+    background: linear-gradient(to right, #282c34, #1d0547);
+}
+
+.home-second-row
+{
+    display: flex;
+    margin-top: 20px;
+   justify-content: space-between;
+
+}
+
+.chart-box
+{
+    width: 60%;
+    height: 60vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    
+}
+
+.recent-invoices-list
+{
+    width: 35%;
+    height: 60vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.recent-invoices-list h1
+{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;   
+}
+
+
+.recent-invoices-list div
+{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.recent-invoices-list div:hover
+{
+    background-color: #f5f5f5;
+}
+
+.recent-invoices-list p
+{
+    width: 50%;
+    padding: 10px;
+
+}
+
+.box-header
+{
+    font-size: 30px;
+    font-weight: bold;
+    color:#dddddd;
+}
+
+.box-title
+{
+    font-size: 20px;
+    font-weight: bold;
+    color:#ec2009;
+}
+
+.list-header
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;   
+    font-weight: bold;
+}
+
+.no-invoices-box
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.no-invoices-box p
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: #282c34;
+}
+
+.add-btn
+{
+    background-color: #282c34;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    justify-content: flex-end;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.add-btn:hover
+{
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
